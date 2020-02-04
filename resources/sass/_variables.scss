@@ -1,0 +1,105 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+%font-family {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+%font-link {
+    font-weight: 500;
+}
+%font-title {
+    font-weight: 600;
+}
+%font-logo {
+    font-family:'Roboto';
+}
+%uc {
+    text-transform: uppercase;
+}
+%no-outline {
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+}
+%shadow {
+    -webkit-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
+}
+%ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pu: #a972cb;
+$lpu: #f1dbff;
+$pi: #ef6eae;
+$lpi: #ffd1e8;
+$pink: #f66d9b;
+$red: #e3342f;
+$r: #C73D3D;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$ye: #e4cb58;
+$lye: #fff0af;
+$gr: #82c254;
+$lgr:#d0ffae;
+$green: #38c172;
+$cy: #19bc8b;
+$lcy: #64ffd0;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$white: #ffffff;
+
+// Random Globals
+%lst {
+    list-style-type: none;
+}
+%inline {
+    display: inline-block;
+}
+%purple {
+    color: $pu;
+        &:hover {
+            color: $lpu !important;
+            box-shadow: 0 0.5em 0.5em -0.4em $pu;
+            border: 2px solid $lpu;
+            cursor: pointer;
+        }
+}
+%pink {
+    color: $pi;
+        &:hover {
+            color: $lpi !important;
+            box-shadow: 0 0.5em 0.5em -0.4em $pi;
+            border: 2px solid $lpi;
+            cursor: pointer;
+        }
+}
+%green {
+    color: $gr;
+        &:hover {
+            color: $lgr !important;
+            box-shadow: 0 0.5em 0.5em -0.4em $gr;
+            border: 2px solid $lgr;
+            cursor: pointer;
+        }
+}
+%cyan {
+    color: $cy;
+        &:hover {
+            color: $lcy !important;
+            box-shadow: 0 0.5em 0.5em -0.4em $cy;
+            border: 2px solid $lcy;
+            cursor: pointer;
+        }
+}

@@ -1,0 +1,14 @@
+.load-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000118;
+  position: absolute;
+  z-index: 3;
+}
+svg {
+  font-weight: bold;
+  max-width: 100%;
+  height: auto;
+  font-family:'Roboto';
+  margin-top: 30vh;
+}

@@ -1,0 +1,228 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '../../public/css/app.css';
+
+@keyframes purple-pulse {
+    0% { box-shadow: 0 0 0 0 $pu; }
+}
+@keyframes pink-pulse {
+    0% { box-shadow: 0 0 0 0 $pi; }
+}
+@keyframes yellow-pulse {
+    0% { box-shadow: 0 0 0 0 $ye; }
+}
+@keyframes green-pulse {
+    0% { box-shadow: 0 0 0 0 $gr; }
+}
+@keyframes cyan-pulse {
+    0% { box-shadow: 0 0 0 0 $cy; }
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    canvas {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    // button colors
+    .purple {
+        @extend %purple;
+        transform: rotate(-3deg);
+        &:focus {
+            animation: purple-pulse 1s;
+            box-shadow: 0 0 0 2em rgba(#fff,0);
+            outline: none;
+            border: 2px solid $lpu;
+            color: $lpu;
+        }
+    }
+    .pink {
+        @extend %pink;
+        transform: rotate(-3deg);
+        &:focus {
+            animation: pink-pulse 1s;
+            box-shadow: 0 0 0 2em rgba(#fff,0);
+            outline: none;
+            border: 2px solid $lpi;
+            color: $lpi;
+        }
+    }
+    .yellow {
+        color: $ye;
+        transform: rotate(-3deg);
+        &:hover {
+            cursor: pointer;
+            color: $lye;
+            border: 2px solid $lye;
+        }
+        &:focus {
+            animation: yellow-pulse 1s;
+            box-shadow: 0 0 0 2em rgba(#fff,0);
+            outline: none;
+            border: 2px solid $lye;
+            color: $lye;
+        }
+    }
+    .green {
+        @extend %green;
+        transform: rotate(-3deg);
+        &:focus {
+            animation: green-pulse 1s;
+            box-shadow: 0 0 0 2em rgba(#fff,0);
+            outline: none;
+            border: 2px solid $lgr;
+            color: $lgr;
+        }
+    }
+    .cyan {
+        @extend %cyan;
+        transform: rotate(-3deg);
+        &:focus {
+            animation: cyan-pulse 1s;
+            box-shadow: 0 0 0 2em rgba(#fff,0);
+            outline: none;
+            border: 2px solid $lcy;
+        }
+    }
+    //
+    .thumbnail-hover {
+        opacity: 0.6;
+    }
+    .thumbnail-link-hover {
+        z-index: 3;
+    }
+    .content {
+        position: absolute;
+        z-index: 2;
+        padding: 50px;
+        .languages {
+            color: $white;
+            .language-option {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .language {
+                width: 25%;
+                margin-left: 15%;
+                margin-top: 10px;
+                border: none;
+                padding: 0;
+                @extend %no-outline;
+                img {
+                    width: 100%;
+                }
+            }
+            .active-language {
+                display: inline-block !important;
+            }
+            .inactive-language {
+                display: none;
+            }
+            .fa-chevron-down {
+                position: absolute;
+                margin-top: 20px;
+            }
+            .seperator {
+                display: none;
+            }
+        }
+        .title {
+            h1 {
+                padding: 10px;
+                @extend %font-logo;
+                color: white !important;
+            }
+        }
+        .nav {
+            font-size: 17px;
+            ul {
+                width: 100%;
+                @extend %lst;
+                justify-content: flex-end;
+                li {
+                    @extend %inline;
+                    margin-right: 1%;
+                    margin-top: 13px;
+                }
+            }
+        }
+        .projects {
+            flex-wrap: wrap;
+            .project {
+                margin-top: 45px;
+                margin-right: 135px;
+                width: 306px;
+                @extend %shadow;
+                .project-date {
+                    position: absolute;
+                    z-index: 5;
+                    background-color: $white;
+                    color: $cy;
+                    padding: 10px;
+                    font-size: 16px;
+                    margin-left: 175px;
+                    @extend %shadow;
+                }
+                .project-title {
+                    position: absolute;
+                    z-index: 5;
+                    background-color: $cy;
+                    color: $white;
+                    padding: 10px;
+                    font-size: 16px;
+                    margin-left: 285px;
+                    @extend %shadow;
+                }
+                .project-thumbnail {
+                    margin-top: 20px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    .vignette {
+                        z-index: 4;
+                    }
+                    .thumbnail {
+                        z-index: 3;
+                        transition: all 0.3s ease;
+                    }
+                    .thumbnail-link {
+                        position: absolute;
+                        font-size: 90px;
+                        margin-top: 85px;
+                        margin-left: 150px;
+                        transition: all 0.3s ease;
+                        color: #1E1E1E;
+                        text-shadow: 0px 0px 20px $cy;
+                    }
+                    img {
+                        position: absolute;
+                        width: 404px;
+                    }
+                }
+                .project-content {
+                    background-color: $white;
+                    margin-top: 290px;
+                    padding: 30px;
+                    width: 404px;
+                    font-size: 15px;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    p {
+                        @extend %ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}
