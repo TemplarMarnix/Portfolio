@@ -3,37 +3,19 @@ $body-bg: #f8fafc;
 
 // Typography
 %font-family {
-    font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 %font-link {
-    font-weight: 500;
+  font-weight: 500;
 }
 %font-title {
-    font-weight: 600;
+  font-weight: 600;
 }
 %font-logo {
-    font-family:'Roboto';
+  font-family: "Roboto";
 }
 %uc {
-    text-transform: uppercase;
-}
-%no-outline {
-    &:focus {
-        outline: none;
-    }
-    &:active {
-        outline: none;
-    }
-}
-%shadow {
-    -webkit-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
-}
-%ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  text-transform: uppercase;
 }
 
 // Colors
@@ -46,13 +28,13 @@ $pi: #ef6eae;
 $lpi: #ffd1e8;
 $pink: #f66d9b;
 $red: #e3342f;
-$r: #C73D3D;
+$r: #c73d3d;
 $orange: #f6993f;
 $yellow: #ffed4a;
 $ye: #e4cb58;
 $lye: #fff0af;
 $gr: #82c254;
-$lgr:#d0ffae;
+$lgr: #d0ffae;
 $green: #38c172;
 $cy: #19bc8b;
 $lcy: #64ffd0;
@@ -61,45 +43,111 @@ $cyan: #6cb2eb;
 $white: #ffffff;
 
 // Random Globals
+%no-outline {
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+%shadow {
+  -webkit-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+}
+%ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 %lst {
-    list-style-type: none;
+  list-style-type: none;
 }
 %inline {
-    display: inline-block;
+  display: inline-block;
 }
 %purple {
-    color: $pu;
-        &:hover {
-            color: $lpu !important;
-            box-shadow: 0 0.5em 0.5em -0.4em $pu;
-            border: 2px solid $lpu;
-            cursor: pointer;
-        }
+  color: $pu;
+  &:hover {
+    color: $lpu !important;
+    box-shadow: 0 0.5em 0.5em -0.4em $pu;
+    border: 2px solid $lpu;
+    cursor: pointer;
+  }
 }
 %pink {
-    color: $pi;
-        &:hover {
-            color: $lpi !important;
-            box-shadow: 0 0.5em 0.5em -0.4em $pi;
-            border: 2px solid $lpi;
-            cursor: pointer;
-        }
+  color: $pi;
+  &:hover {
+    color: $lpi !important;
+    box-shadow: 0 0.5em 0.5em -0.4em $pi;
+    border: 2px solid $lpi;
+    cursor: pointer;
+  }
 }
 %green {
-    color: $gr;
-        &:hover {
-            color: $lgr !important;
-            box-shadow: 0 0.5em 0.5em -0.4em $gr;
-            border: 2px solid $lgr;
-            cursor: pointer;
-        }
+  color: $gr;
+  &:hover {
+    color: $lgr !important;
+    box-shadow: 0 0.5em 0.5em -0.4em $gr;
+    border: 2px solid $lgr;
+    cursor: pointer;
+  }
 }
 %cyan {
-    color: $cy;
-        &:hover {
-            color: $lcy !important;
-            box-shadow: 0 0.5em 0.5em -0.4em $cy;
-            border: 2px solid $lcy;
-            cursor: pointer;
-        }
+  color: $cy;
+  &:hover {
+    color: $lcy !important;
+    box-shadow: 0 0.5em 0.5em -0.4em $cy;
+    border: 2px solid $lcy;
+    cursor: pointer;
+  }
+}
+
+// Showcases
+%showcase {
+  margin-top: 45px;
+  margin-right: 135px;
+  width: 306px;
+  @extend %shadow;
+}
+%showcase-date {
+  position: absolute;
+  z-index: 5;
+  padding: 10px;
+  font-size: 16px;
+  @extend %shadow;
+  background-color: $white;
+}
+%showcase-title {
+  position: absolute;
+  z-index: 5;
+  color: $white;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 285px;
+  @extend %shadow;
+}
+%showcase-link {
+  position: absolute;
+  font-size: 90px;
+  margin-top: 85px;
+  margin-left: 150px;
+  transition: all 0.3s ease;
+  color: #1e1e1e;
+}
+%showcase-content {
+  background-color: $white;
+  margin-top: 290px;
+  padding: 30px;
+  width: 404px;
+  font-size: 15px;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    @extend %ellipsis;
+  }
 }

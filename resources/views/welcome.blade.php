@@ -10,11 +10,11 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600|Roboto&display=swap" rel="stylesheet">
     <!-- Styles -->
+    <link href="{{ asset('css/load.css') }}" rel="stylesheet">
     <link href="{{ asset('css/buttons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/title.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/load.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -44,13 +44,16 @@
                 <i class="fas fa-chevron-down language-option"></i>
                 <button id="nl" class="translate language active-language dutch">
                     <img src="images/netherlands.png" alt="NL">
-                    <button id="en" class="translate language inactive-language language-option english">
+                </button>
+                <button id="en" class="translate language inactive-language language-option english">
                         <img src="images/united-kingdom.png" alt="EN">
-                        <button id="de" class="translate language inactive-language language-option german">
-                            <img src="images/germany.png" alt="DE">
-                            <button id="ru" class="translate language inactive-language language-option russian">
-                                <img src="images/russia.png" alt="RU">
-                            </button>
+                </button>
+                <button id="de" class="translate language inactive-language language-option german">
+                    <img src="images/germany.png" alt="DE">
+                </button>
+                <button id="ru" class="translate language inactive-language language-option russian">
+                        <img src="images/russia.png" alt="RU">
+                </button>
             </div>
             <div class="col-lg-4 col-md-4 d-flex title">
                 <h1 class="title-animation first-title lang" key="portfolio">Portfolio</h1>
@@ -70,20 +73,129 @@
         </div>
         <div class="projects d-flex justify-content-space-evenly align-items-flex-start">
             <div class="project">
-                <div class="project-date">
+                <div class="project-date date-yellow layout">
+                    Layout (HTML/Bootstrap)
+                </div>
+                <div class="project-title title-yellow">
+                    Front-End
+                </div>
+                <div class="project-thumbnail">
+                    <img class="vignette" src="images/vignette.png" alt="vignette">
+                    <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-yellow"></i>
+                </div>
+                <div class="project-content">
+                    <span>Front End</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                    <a href="">Zie meer</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-date date-yellow styling">
+                    Styling (CSS/SASS)
+                </div>
+                <div class="project-title title-yellow">
+                    Front-End
+                </div>
+                <div class="project-thumbnail">
+                    <img class="vignette" src="images/vignette.png" alt="vignette">
+                    <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-yellow"></i>
+                </div>
+                <div class="project-content">
+                    <span>Front End</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                    <a href="">Zie meer</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-date date-yellow interface">
+                    Interface
+                </div>
+                <div class="project-title title-yellow">
+                    Front-End
+                </div>
+                <div class="project-thumbnail">
+                    <img class="vignette" src="images/vignette.png" alt="vignette">
+                    <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-yellow"></i>
+                </div>
+                <div class="project-content">
+                    <span>Front End</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                    <a href="">Zie meer</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-date date-yellow animations">
+                    Animations (jQuery/CSS)
+                </div>
+                <div class="project-title title-yellow">
+                    Front-End
+                </div>
+                <div class="project-thumbnail">
+                    <img class="vignette" src="images/vignette.png" alt="vignette">
+                    <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-yellow"></i>
+                </div>
+                <div class="project-content">
+                    <span>Front End</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                    <a href="">Zie meer</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-date date-green php">
+                    Functions (PHP)
+                </div>
+                <div class="project-title title-green">
+                    Back-End
+                </div>
+                <div class="project-thumbnail">
+                    <img class="vignette" src="images/vignette.png" alt="vignette">
+                    <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-green"></i>
+                </div>
+                <div class="project-content">
+                    <span>Front End</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                    <a href="">Zie meer</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-date date-green database">
+                    Database (MySQL)
+                </div>
+                <div class="project-title title-green">
+                    Back-End
+                </div>
+                <div class="project-thumbnail">
+                    <img class="vignette" src="images/vignette.png" alt="vignette">
+                    <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-green"></i>
+                </div>
+                <div class="project-content">
+                    <span>Front End</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                    <a href="">Zie meer</a>
+                </div>
+            </div>
+            <!-- projects -->
+            <div class="project">
+                <div class="project-date date-cyan date-project">
                     22-05-2000
                 </div>
-                <div class="project-title">
+                <div class="project-title title-cyan">
                     Project Title
                 </div>
                 <div class="project-thumbnail">
                     <img class="vignette" src="images/vignette.png" alt="vignette">
                     <img class="thumbnail" src="images/thumbnail.png" alt="thumbnail">
-                    <i class="fas fa-arrow-alt-circle-right thumbnail-link"></i>
+                    <i class="fas fa-arrow-alt-circle-right thumbnail-link link-cyan"></i>
                 </div>
                 <div class="project-content">
                     <span>Project Title</span>
-                    <p>They call me a nigger because my dick is bigger</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
                     <a href="">Zie meer</a>
                 </div>
             </div>

@@ -28,8 +28,9 @@ body {
     -ms-user-select: none;
     user-select: none;
     canvas {
-        position: absolute;
+        position: fixed;
         width: 100%;
+        height: 100vh;
         z-index: 1;
     }
     // button colors
@@ -156,31 +157,54 @@ body {
             }
         }
         .projects {
+            margin-top: 100px;
             flex-wrap: wrap;
             .project {
-                margin-top: 45px;
-                margin-right: 135px;
-                width: 306px;
-                @extend %shadow;
+              @extend %showcase;
                 .project-date {
-                    position: absolute;
-                    z-index: 5;
-                    background-color: $white;
-                    color: $cy;
-                    padding: 10px;
-                    font-size: 16px;
+                    @extend %showcase-date;
+                }
+                .layout {
+                    margin-left: 83px;
+                }
+                .styling {
+                    margin-left: 125px;
+                }
+                .interface {
+                    margin-left: 202px;
+                }
+                .animations {
+                    margin-left: 86px;
+                }
+                .php {
+                    margin-left: 149px;
+                }
+                .database {
+                    margin-left: 130px;
+                }
+                .date-project {
                     margin-left: 175px;
-                    @extend %shadow;
+                }
+                .date-yellow {
+                    color: $ye;
+                }
+                .date-green {
+                    color: $gr;
+                }
+                .date-cyan {
+                    color: $cy;
                 }
                 .project-title {
-                    position: absolute;
-                    z-index: 5;
+                    @extend %showcase-title;
+                }
+                .title-yellow {
+                    background-color: $ye;
+                }
+                .title-green {
+                    background-color: $gr;
+                }
+                .title-cyan {
                     background-color: $cy;
-                    color: $white;
-                    padding: 10px;
-                    font-size: 16px;
-                    margin-left: 285px;
-                    @extend %shadow;
                 }
                 .project-thumbnail {
                     margin-top: 20px;
@@ -195,12 +219,15 @@ body {
                         transition: all 0.3s ease;
                     }
                     .thumbnail-link {
-                        position: absolute;
-                        font-size: 90px;
-                        margin-top: 85px;
-                        margin-left: 150px;
-                        transition: all 0.3s ease;
-                        color: #1E1E1E;
+                        @extend %showcase-link;
+                    }
+                    .link-yellow {
+                        text-shadow: 0px 0px 20px $ye;
+                    }
+                    .link-green {
+                        text-shadow: 0px 0px 20px $gr;
+                    }
+                    .link-cyan {
                         text-shadow: 0px 0px 20px $cy;
                     }
                     img {
@@ -209,18 +236,7 @@ body {
                     }
                 }
                 .project-content {
-                    background-color: $white;
-                    margin-top: 290px;
-                    padding: 30px;
-                    width: 404px;
-                    font-size: 15px;
-                    span {
-                        font-size: 20px;
-                        font-weight: bold;
-                    }
-                    p {
-                        @extend %ellipsis;
-                    }
+                    @extend %showcase-content;
                 }
             }
         }
