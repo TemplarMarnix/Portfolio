@@ -21,4 +21,4 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::resource('project', 'ProjectController');
+Route::post('project', 'ProjectController@store');
