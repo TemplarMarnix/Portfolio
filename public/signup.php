@@ -1,6 +1,4 @@
 <?php
-    require "header.php";
-
     if (isset($_GET['error'])) {
         if ($_GET['error'] == "emptyfields") {
             echo '<p>Vul alle velden in!</p>';
@@ -37,6 +35,3 @@
             </form>
         </div>
     </div>
-<?php
-    require "footer.php";
-?>

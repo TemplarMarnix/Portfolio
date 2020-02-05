@@ -14,5 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/signup', function () {
+    return view('signup');
+});
+Route::get('/admin', function () {
+    return view('admin');
+});
 
 Route::resource('project', 'ProjectController');
