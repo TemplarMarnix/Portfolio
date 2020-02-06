@@ -36,11 +36,11 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            `name`  =>  'required',
-            `description`  =>  'required',
-            `date`  =>  'required',
-            `link`  =>  'required',
-            `image`  =>  'required'
+            'name'  =>  'required',
+            'description'  =>  'required',
+            'date'  =>  'required',
+            'link'  =>  'required',
+            'image'  =>  'required'
 
         ]);
         $project = new Project([
